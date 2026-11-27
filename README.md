@@ -2,7 +2,9 @@
 
 > **Archived.** No longer maintained. This repository is kept as a record and is read-only.
 
-Six interactive isometric line drawings ("figures") in the Hairline style, each one self-contained HTML page that responds to the pointer. They were made with the `hairline-create` skill (source recorded in `skills-lock.json`), which supplies a fixed engine (`kernel.js`) and page (`bench.html`); each figure is one `.js` file.
+Six interactive isometric line drawings ("figures") in the Hairline style, each one self-contained HTML page that responds to the pointer. They are built with Lucas Marques's [Hairline](https://github.com/lucasmarkes/hairline) engine (`kernel.js`) and page (`bench.html`), copied into `.agents/skills/hairline-create/` (source recorded in `skills-lock.json`); each figure is one `.js` file.
+
+[Live demo](https://varunagarwalofficial.github.io/hairline/) · [MIT licence](LICENSE)
 
 The figures, from the `means` line in each file:
 
@@ -31,7 +33,7 @@ node .agents/skills/hairline-create/look.mjs <name>.js --answer x,y,z --edge x,y
 
 ## State
 
-State not recorded. `bloom` has no check images and `swings` has no `-rest.png`; whether that means they were not checked is not recorded.
+A finished set of six figures, archived on GitHub. `bloom` has no check images and `swings` has no `-rest.png`.
 
 ## Layout
 
@@ -43,3 +45,8 @@ State not recorded. `bloom` has no check images and `swings` has no `-rest.png`;
 | `.agents/skills/hairline-create/` | The skill: `SKILL.md`, rules, engine, bench page, build, validate and look scripts, two example figures. |
 | `.claude/skills/hairline-create` | A link to the same skill folder. |
 | `skills-lock.json` | Where the skill came from and its hash. |
+| `index.html` | The demo page that lists the figures. |
+
+## Licence
+
+The figures are MIT, see [LICENSE](LICENSE). The Hairline engine and tools in `.agents/skills/hairline-create/`, also inlined into each `hairline-*.html` page, are by Lucas Marques under the MIT licence; the notice is in that folder's `LICENSE` and at the end of the top-level one.
